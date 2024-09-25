@@ -2,13 +2,10 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-}
-
-* {
     margin: 0;
-    border: 0;
     padding: 0;
 }
+
 
 body {
     display: flex;
@@ -22,13 +19,23 @@ body {
 
 .container {
     display: flex;
+    width: 500px;
+    height: 500px;
+}
+
+.gridContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .gridSquare {
+    display: flex;
+    flex-grow: 1;
+    height: 30px;
+    width: 30px;
     background-color: white;
     border: 1px solid black;
-    width: 30px;
-    height: 30px;
 }
 
 .hoveredSquare {
