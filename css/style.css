@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: grey;
 }
   
 /* CSS RESET ABOVE */
@@ -24,8 +25,12 @@ body {
 }
 
 .gridSquare {
-    background-color: black;
-    border: 1px solid white;
+    background-color: white;
+    border: 1px solid black;
     width: 30px;
     height: 30px;
+}
+
+.hoveredSquare {
+    background-color: aqua;
 }
