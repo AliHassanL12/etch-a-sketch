@@ -1,0 +1,31 @@
+/* CSS RESET BELOW */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+/* CSS RESET ABOVE */
+
+.container {
+    display: flex;
+}
+
+.gridSquare {
+    background-color: black;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+}
