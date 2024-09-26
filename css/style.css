@@ -9,6 +9,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -20,8 +21,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
 }
 
 .gridContainer {
@@ -37,4 +38,12 @@ body {
 
 .hoveredSquare {
     background-color: aqua;
+}
+
+.resetButton {
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(227, 65, 65);
 }
