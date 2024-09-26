@@ -1,7 +1,7 @@
 const container = document.querySelector('.container')
 
 
-function createGrid(numberOfSqrs = 16) {
+function createNewGrid(numberOfSqrs = 16) {
     for (let i = 1; i <= numberOfSqrs; i++) {
         const gridContainer = document.createElement('div');
         gridContainer.setAttribute('class', 'gridContainer');
@@ -22,7 +22,7 @@ function createGrid(numberOfSqrs = 16) {
     })
 }
 
-function deleteGrid() {
+function deleteCurrentGrid() {
     const gridContainers = document.querySelectorAll('.gridContainer');
     gridContainers.forEach((gridContainer) => {
         gridContainer.remove();
@@ -34,9 +34,9 @@ const resetButton = document.querySelector('.resetButton');
 resetButton.addEventListener('click', () => {
     const getNewGridSize = +prompt('How many squares would you like per side?');
     if (getNewGridSize <= 100) {
-        deleteGrid();
-        createGrid(getNewGridSize);
+        deleteCurrentGrid();
+        createNewGrid(getNewGridSize);
     }
 })
 
-createGrid();
+createNewGrid();
